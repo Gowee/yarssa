@@ -1,5 +1,4 @@
 import fetch from "node-fetch";
-import { JSDOM } from "jsdom";
 import { Sema } from "async-sema";
 import FeedParser, { Meta as Feed_, Item } from "node-feedparser";
 
@@ -33,7 +32,7 @@ export async function fetchFeed(url: string): Promise<Feed> {
   });
 
   let meta;
-  let items = [];
+  const items = [];
   parser
     .on("meta", (meta_) => {
       meta = meta_;
