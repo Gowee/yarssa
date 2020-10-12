@@ -20,7 +20,7 @@ export interface Feed extends Feed_ {
   items: Item[];
 }
 
-export { Item } from "node-feedparser";
+export type { Item } from "node-feedparser";
 
 export async function fetchFeed(url: string): Promise<Feed> {
   const parser = new FeedParser({ addmeta: false, feedurl: url });
