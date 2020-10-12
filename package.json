@@ -29,7 +29,7 @@
     "@types/node-fetch": "^2.5.7",
     "@vercel/node": "^1.8.4",
     "async-sema": "^3.1.0",
-    "node-feedparser": "^1.0.1",
+    "feedparser": "^2.2.10",
     "node-fetch": "^2.6.1",
     "sirv-cli": "^1.0.1"
   },
